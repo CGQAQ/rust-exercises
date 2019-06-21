@@ -49,7 +49,7 @@ impl <T> List<T> {
                 }
 
                 (*second_last).next = None;
-                Some(mem::replace(&mut (*temp).data, mem::zeroed()))
+                return Some(mem::replace(&mut (*temp).data, mem::zeroed()))
             }
         }
     }

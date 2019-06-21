@@ -1,5 +1,7 @@
 mod list;
 
+
+
 fn main() {
     let mut l = list::List::new();
     l.push_end("hello");
@@ -8,7 +10,6 @@ fn main() {
     l.pop_end();
 //    l.pop_end();
 //    l.pop_end();
-
 
     for i in l.iter().enumerate() {
         println!("{}: {}", i.0, i.1)
